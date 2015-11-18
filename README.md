@@ -1,5 +1,5 @@
 # TinyPNG.net
-A .NET Library for Shrinking Images via the TinyPNG API
+A 3rd Party .NET Library for Shrinking Images via the TinyPNG API by [digitalmomentum.com.au](http://digitalmomentum.com.au)
 
 ## Installation
 

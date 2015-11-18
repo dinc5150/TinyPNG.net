@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TinyPng")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("TinyPNG.Net")]
+[assembly: AssemblyDescription("A 3rd Party .NET Library for Shrinking Images via the TinyPNG API by digitalmomentum.com.au")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TinyPng")]
+[assembly: AssemblyCompany("DigitalMomentum")]
+[assembly: AssemblyProduct("TinyPNG.Net")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
