@@ -6,6 +6,8 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Helpers;
+using Newtonsoft.Json;
+using TinyPngDotNet.Models;
 
 namespace TinyPngDotNet {
     public class TinyPng {
@@ -109,6 +111,25 @@ namespace TinyPngDotNet {
             return false;
         }
 
-        
+        /// <summary>
+        /// Send a compressed file to Amazon S3 storage
+        /// </summary>
+        /// <param name="data">object containing required params for connecting to S3</param>
+        /// <returns>true if succesfull or false if failed</returns>
+        public bool UpoadToS3(S3UploadData data)
+        {
+            if (LastUploadResponse.error == null)
+            {
+                TinyPngConnection.Headers.Add("Content-Type", "application/json");
+                var retVal = TinyPngConnection.UploadString(TinyPngConnection.ResponseHeaders["Location"],
+                    JsonConvert.SerializeObject(new {data = data}));
+
+                //@TODO: check status code of request for errors
+
+                return true;
+            }
+            return false;
+        }
+
     }
 }
