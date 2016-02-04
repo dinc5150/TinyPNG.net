@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Text;
-using System.Threading.Tasks;
 using System.Web.Helpers;
 using Newtonsoft.Json;
 using TinyPngDotNet.Models;
@@ -122,7 +119,7 @@ namespace TinyPngDotNet {
             {
                 TinyPngConnection.Headers.Add("Content-Type", "application/json");
                 var retVal = TinyPngConnection.UploadString(TinyPngConnection.ResponseHeaders["Location"],
-                    JsonConvert.SerializeObject(new {data = data}));
+                    JsonConvert.SerializeObject(new {store = data}));
 
                 //@TODO: check status code of request for errors
 
