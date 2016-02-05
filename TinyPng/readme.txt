@@ -26,13 +26,13 @@ The following code shows how to shrink an API
 
 TinyPngDotNet.TinyPng myPng = new TinyPngDotNet.TinyPng("YOUR_TINY_PNG_API_KEY");
 
-var response = myPng.Shrink("c:\temp\Original.png");
+var response = myPng.Shrink("c:\\temp\\Original.png");
 
 int OutputSize = response.output.size;
 string DownloadUrl = response.output.url;
 double Ratio = response.output.ratio;
 
-myPng.DownloadShrinkedFile("c:\temp\Compressed.png"));
+myPng.DownloadShrinkedFile("c:\\temp\\Compressed.png"));
 ----------------------------------------------------------------------------------------
 
 
