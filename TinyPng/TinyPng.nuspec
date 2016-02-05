@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>David Sheiles</authors>
+    <owners>David Sheiles</owners>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/dinc5150/TinyPNG.net</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>A 3rd Party .NET Library for Shrinking Images via the TinyPNG API by digitalmomentum.com.au</description>
+    <releaseNotes>
+      1.0.0.0 First release
+      1.0.1.0 @Alion Added support for S3
+    </releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>Image Compression PNG JPG JPEG TinyPng</tags>
+  </metadata>
+</package>

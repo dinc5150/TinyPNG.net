@@ -23,15 +23,11 @@ double Ratio = response.output.ratio;
 myPng.DownloadShrinkedFile("c:\temp\Compressed.png"));
 ```
 
-## API Functions not yet Added
-This Library only has the basic function generating a compressed image from Tiny PNG. 
-There are other API functions that have not yet been added. Please feel free to help me extend this library and make it better!
-
-## 2016-02-04, Raoul de Vries, Alion BV:
+#### 2016-02-04, Raoul de Vries, Alion BV:
 Implemented the S3 upload functionality, it seems to work only on the following api url: https://api.tinify.com/
 [TARGET_PATH] consists of the filename including any folders
 After an upload you can do the following to upload to an S3 bucket:
-
+```
  myPng.UpoadToS3(new S3UploadData()
             {
                 service = "s3",
@@ -41,6 +37,13 @@ After an upload you can do the following to upload to an S3 bucket:
                 region = YOUR_S3_REGION
 
             });
+```
+
+## API Functions not yet Added
+This Library only has the basic function generating a compressed image from Tiny PNG. 
+There are other API functions that have not yet been added. Please feel free to help me extend this library and make it better!
+
+
 
 Functions not yet supported:
 - Resizing 
